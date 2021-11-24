@@ -9,6 +9,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		//Creo l'oggetto per l'input
 		Scanner input = new Scanner(System.in);
 		//VeicoloAMotore[] veicoli = new VeicoloAMotore[15];
 		Garage garage = new Garage();

@@ -5,9 +5,11 @@ import veicoli.*;
 import java.util.Scanner;
 
 public class Garage {
-
+	
+	//Creo l'oggetto per l'input
 	Scanner input = new Scanner(System.in);
-
+	
+	//Definisco un vettore di VeicoloAMotore
 	private static VeicoloAMotore[] veicoli = new VeicoloAMotore[15];
 
 	public Garage() {
@@ -16,6 +18,7 @@ public class Garage {
 		}
 	}
 
+	//Metodo per l'immissione di un nuovo veicolo nel garage
 	public int immettiNuovoVeicolo() {
 		int scelta,posto;
 		boolean control=true;
@@ -27,11 +30,11 @@ public class Garage {
 				System.out.println("In quale posto lo vuoi inserire(I posti vanno da 1 a 15 compresi)?");
 				posto=input.nextInt();
 					if(veicoli[posto-1]!=null) {
-							System.out.println("Il posto √® gi√† occupato, reinseriscilo");
+							System.out.println("Il posto Ë gi‡† occupato, reinseriscilo");
 							control2=true;
 					}
 					else
-						System.out.println("Il posto √® libero");
+						System.out.println("Il posto Ë libero");
 					
 				
 			}while(control2);
@@ -55,7 +58,7 @@ public class Garage {
 				input.next();
 				System.out.println("Inserisci cilindrata: ");
 				int cilind = input.nextInt();
-				System.out.println("Inserisci capacit√† carico: ");
+				System.out.println("Inserisci capacit‡† carico: ");
 				int cap = input.nextInt();
 
 				veicoli[posto-1]=new Furgone(anno,marca,alimentazione, cilind,cap);
@@ -107,7 +110,8 @@ public class Garage {
 		System.out.println("Hai assegnato il veicolo alla postazione numero: "+ posto);
 		return posto;
 	}
-
+	
+	//Metodo per l'estrazione di un veicolo dal garage
 	public void estraiVeicolo() {
 		int posto=0;
 		do {
@@ -117,7 +121,7 @@ public class Garage {
 			if(posto!=0) {
 
 				if(veicoli[posto-1]==null)
-					System.out.println("Non puoi estrarre alcun veicolo poich√® il posto √® libero");
+					System.out.println("Non puoi estrarre alcun veicolo poichË il posto Ë libero");
 				else
 					System.out.println("Hai estratto il veicolo :" + veicoli[posto-1].toString()+" che si trovava al posto "+ posto);
 			}
@@ -125,6 +129,7 @@ public class Garage {
 		} while(posto != 0);
 	}
 
+	//Metodo che stampa l'attuale situazione del garage
 	public void stampaSituazionePosto() {
 		boolean situa=true;
 		int[] postDisp=new int[15];
@@ -136,7 +141,7 @@ public class Garage {
 				j++;
 			}
 			else {
-				System.out.println("Il posto "+(i+1)+" √® occupato da:");
+				System.out.println("Il posto "+(i+1)+" Ë occupato da:");
 				System.out.println(veicoli[i].toString());
 			}
 

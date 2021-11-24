@@ -1,13 +1,16 @@
 package veicoli;
 
+//Definizione di una classe astratta VecioloAMotore
 public abstract class VeicoloAMotore {
 	
+	//Attributi
 	private int annoImmatricolazione;
 	private String marca;
 	private String alimentazione;
 	private int cilindrata;
 	private int numPosto;
 	
+	//Costruttore
 	public VeicoloAMotore(int annoImmatricolazione, String marca, String alimentazione, int cilindrata) {
 		this.annoImmatricolazione = annoImmatricolazione;
 		this.marca = marca;
@@ -15,6 +18,7 @@ public abstract class VeicoloAMotore {
 		this.cilindrata = cilindrata;
 	}
 	
+	//Vari metodi get e set
 	public int getAnnoImmatricolazione() {
 		return annoImmatricolazione;
 	}
