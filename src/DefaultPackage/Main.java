@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 import garage.*;
 import veicoli.*;
-
+/**
+ * Main class
+ * @author gians_ji5genm
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

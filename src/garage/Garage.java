@@ -3,7 +3,11 @@ import veicoli.*;
 
 
 import java.util.Scanner;
-
+/**
+ * Classe garage che contiene tutti i veicoli
+ * @author gians_ji5genm
+ *
+ */
 public class Garage {
 	
 	//Creo l'oggetto per l'input
@@ -18,7 +22,10 @@ public class Garage {
 		}
 	}
 
-	//Metodo per l'immissione di un nuovo veicolo nel garage
+	/**
+	 * Metodo per l'immissione di un nuovo veicolo nel garage
+	 * @return
+	 */
 	public int immettiNuovoVeicolo() {
 		int scelta,posto;
 		boolean control=true;
@@ -111,7 +118,9 @@ public class Garage {
 		return posto;
 	}
 	
-	//Metodo per l'estrazione di un veicolo dal garage
+	/**
+	 * Metodo per l'estrazione di un veicolo dal garage
+	 */
 	public void estraiVeicolo() {
 		int posto=0;
 		do {
@@ -129,7 +138,9 @@ public class Garage {
 		} while(posto != 0);
 	}
 
-	//Metodo che stampa l'attuale situazione del garage
+	/**
+	 * Metodo che stampa l'attuale situazione del garage
+	 */
 	public void stampaSituazionePosto() {
 		boolean situa=true;
 		int[] postDisp=new int[15];

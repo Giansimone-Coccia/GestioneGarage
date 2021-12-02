@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"veicoli","l":"Automobile"},{"p":"veicoli","l":"Furgone"},{"p":"garage","l":"Garage"},{"p":"DefaultPackage","l":"Main"},{"p":"veicoli","l":"Motocicletta"},{"p":"veicoli","l":"VeicoloAMotore"}];updateSearchResults();
